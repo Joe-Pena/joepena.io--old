@@ -1,0 +1,15 @@
+{
+  "name": "rawportfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "start": "live-server",
+    "compile:sass": "node-sass ./sass/main.scss ./styles.css -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.10.0"
+  }
+}
