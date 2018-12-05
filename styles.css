@@ -29,6 +29,8 @@ body {
   .heading .name-logo {
     display: inline-block;
     width: 20rem;
+    margin-left: 3rem;
+    margin-top: -0.1rem;
     grid-column-start: 1; }
 
 .navbar_links {
@@ -100,6 +102,53 @@ body {
       background-color: #3C485E;
       width: 100%; }
 
-.third-container {
+.first-project {
   height: 100vh;
-  background-color: #273742; }
+  background-color: #152427;
+  display: grid;
+  grid-template-rows: 1fr 0.25fr;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas: "desc screenshot" "desc links"; }
+  .first-project--screenshot {
+    grid-area: screenshot;
+    background-color: #979797; }
+  .first-project--description {
+    grid-area: desc;
+    background-color: #3C485E; }
+  .first-project--links {
+    grid-area: links;
+    background-color: #005a69; }
+
+.second-project {
+  height: 100vh;
+  background-color: #580303;
+  display: grid;
+  grid-template-rows: 1fr 0.25fr;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas: "screenshot desc" "links desc"; }
+  .second-project--screenshot {
+    grid-area: screenshot;
+    background-color: #fff; }
+  .second-project--description {
+    grid-area: desc;
+    background-color: #3C485E; }
+  .second-project--links {
+    grid-area: links;
+    background-color: #005a69; }
+
+.third-project {
+  height: 100vh;
+  background-color: #49400b;
+  display: grid;
+  grid-template-rows: 1fr 0.25fr;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas: "desc screenshot" "desc links"; }
+  .third-project--screenshot {
+    grid-area: screenshot;
+    background-color: #fff; }
+  .third-project--description {
+    grid-area: desc;
+    background-color: #3C485E; }
+  .third-project--links {
+    grid-area: links;
+    background-color: #005a69; }

@@ -1,6 +1,7 @@
 $color-background-dark:#E3E3E3;
 $color-font-primary: #E3E3E3;
 $color-highlight-primary: #3C485E;
+$color-highlight-links: #3a627c;
 $color-second-bg: #0f0f0f;
 
 *,
@@ -39,6 +40,8 @@ body {
   .name-logo {
     display: inline-block;
     width: 20rem;
+    margin-left: 3rem;
+    margin-top: -0.1rem;
     grid-column-start: 1;
   }
 }
@@ -60,14 +63,14 @@ body {
         margin-right: 0.2rem;
 
         &:hover {
-          color: #3a627c;
+          color: $color-highlight-links;
         }
 
         &-last {
           border: none;
 
           &:hover {
-            color: #3a627c;
+            color: $color-highlight-links;
           }
         }
       }
@@ -144,7 +147,80 @@ body {
   }
 }
 
-.third-container {
+.first-project {
   height: 100vh;
-  background-color: #273742;
+  background-color: #152427;
+  display: grid;
+  grid-template-rows: 1fr 0.25fr;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas: 
+    "desc screenshot"
+    "desc links";
+
+    &--screenshot {
+      grid-area: screenshot;
+      background-color: rgb(151, 151, 151);
+    }
+
+    &--description {
+      grid-area: desc;
+      background-color: #3C485E;
+    }
+
+    &--links {
+      grid-area: links;
+      background-color: #005a69;
+    }
+}
+
+.second-project {
+  height: 100vh;
+  background-color: #580303;
+  display: grid;
+  grid-template-rows: 1fr 0.25fr;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas: 
+    "screenshot desc"
+    "links desc";
+
+    &--screenshot {
+      grid-area: screenshot;
+      background-color: #fff;
+    }
+
+    &--description {
+      grid-area: desc;
+      background-color: #3C485E;
+    }
+
+    &--links {
+      grid-area: links;
+      background-color: #005a69;
+    }
+}
+
+.third-project {
+  height: 100vh;
+  background-color: #49400b;
+  display: grid;
+  grid-template-rows: 1fr 0.25fr;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas: 
+    "desc screenshot"
+    "desc links";
+
+    &--screenshot {
+      grid-area: screenshot;
+      background-color: #fff;
+    }
+
+    &--description {
+      grid-area: desc;
+      background-color: #3C485E;
+    }
+
+    &--links {
+      grid-area: links;
+      background-color: #005a69;
+    }
 }
