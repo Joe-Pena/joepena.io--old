@@ -9,7 +9,7 @@ html {
   font-size: 62.5%; }
 
 body {
-  background-color: #E3E3E3;
+  background-color: #1e1e1e;
   height: 100vh;
   color: #E3E3E3;
   font-family: 'Monserrat', sans-serif;
@@ -21,11 +21,12 @@ body {
   font-size: 1.5rem;
   display: grid;
   grid-template-rows: 1fr;
-  grid-column-start: 1fr 1.5fr 1fr;
+  grid-template-columns: 1fr 1.5fr 1fr;
   position: fixed;
   text-align: center;
   height: 6vh;
-  width: 100%; }
+  width: 100%;
+  z-index: 999; }
   .heading .name-logo {
     display: inline-block;
     width: 20rem;
@@ -36,7 +37,10 @@ body {
 .navbar_links {
   list-style-type: none;
   grid-column-start: 3;
-  margin-top: 1rem; }
+  margin-top: 1.5rem;
+  margin-right: 1.5rem;
+  justify-self: flex-end;
+  z-index: 3; }
   .navbar_links_link {
     display: inline; }
     .navbar_links_link_a {
@@ -81,46 +85,75 @@ body {
         margin-top: 1rem; }
 
 .second-container {
-  height: 100vh;
-  background-color: #0f0f0f;
+  height: 200vh;
+  background-color: #1e1e1e;
   display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: 0.5fr 1fr; }
-  .second-container_textbox {
-    grid-column-start: 1;
+  grid-template-rows: 1fr 0.5fr;
+  grid-template-columns: 0.5fr 1fr;
+  grid-template-areas: "picture text" "tech text"; }
+  .second-container_picture {
+    grid-area: picture;
     background-color: #fff;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr;
-    grid-template-areas: "info" "footer"; }
-    .second-container_textbox_info {
-      grid-area: "info";
-      background-color: #E3E3E3;
-      width: 100%; }
-    .second-container_textbox_footer {
-      grid-area: "footer";
-      background-color: #3C485E;
-      width: 100%; }
+    background-image: url(https://vignette.wikia.nocookie.net/napoleondynamite/images/0/04/Kip_Dynamite.jpg/revision/latest?cb=20120117222921);
+    background-size: cover; }
+  .second-container_tech-stack {
+    grid-area: tech;
+    background-color: #005a69;
+    text-align: center;
+    font-size: 3rem; }
+  .second-container_about-me-text {
+    grid-area: text;
+    background-color: #1e1e1e;
+    font-size: 3rem;
+    text-align: center;
+    align-content: center; }
+    .second-container_about-me-text-p {
+      align-self: center; }
+
+.projects-intro {
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to bottom right, rgba(36, 36, 36, 0.8), rgba(20, 20, 20, 0.8)), url(../images/project-intro.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  z-index: -1;
+  font-size: 3rem; }
+  .projects-intro_PROJECTS {
+    color: white; }
 
 .first-project {
-  height: 100vh;
-  background-color: #152427;
+  height: 150vh;
+  background-color: #212032;
+  padding: 5rem;
   display: grid;
-  grid-template-rows: 1fr 0.25fr;
-  grid-template-columns: 1fr 2fr;
-  grid-template-areas: "desc screenshot" "desc links"; }
+  grid-template-rows: 20% 1fr 10%;
+  grid-template-columns: 15% 1fr 15%;
+  grid-template-areas: "desc desc desc" "screenshot screenshot screenshot" "links . ."; }
   .first-project--screenshot {
     grid-area: screenshot;
-    background-color: #979797; }
+    display: flex;
+    justify-content: center; }
+    .first-project--screenshot_buvie {
+      width: 90%;
+      height: 90%;
+      z-index: 0; }
   .first-project--description {
     grid-area: desc;
-    background-color: #3C485E; }
+    font-size: 3rem;
+    text-align: center; }
+    .first-project--description_BUVIE {
+      color: #A33944; }
+    .first-project--description_text {
+      font-family: 'Lato', sans-serif;
+      color: #8B8B99; }
   .first-project--links {
-    grid-area: links;
-    background-color: #005a69; }
+    grid-area: links; }
 
 .second-project {
-  height: 100vh;
+  height: 150vh;
   background-color: #580303;
   display: grid;
   grid-template-rows: 1fr 0.25fr;
@@ -137,7 +170,7 @@ body {
     background-color: #005a69; }
 
 .third-project {
-  height: 100vh;
+  height: 150vh;
   background-color: #49400b;
   display: grid;
   grid-template-rows: 1fr 0.25fr;
