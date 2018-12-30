@@ -105,6 +105,7 @@ body {
     display: grid;
     grid-template-rows: 1fr 1fr;
     text-align: center;
+    cursor: default;
 
     &_about-me {
       grid-row-start: 1;
@@ -143,6 +144,7 @@ body {
     background-color: #005a69;
     text-align: center;
     font-size: 3rem;
+    cursor: default;
   }
 
   &_about-me-text {
@@ -151,6 +153,7 @@ body {
     font-size: 3rem;
     text-align: center;
     align-content: center;
+    cursor: default;
 
     &-p {
       align-self: center;
@@ -176,6 +179,7 @@ body {
 
   &_PROJECTS {
     color: white;
+    cursor: default;
   }
 }
 
@@ -184,12 +188,12 @@ body {
   background-color: $color-bg-buvie;
   padding: 5rem;
   display: grid;
-  grid-template-rows: 20% 1fr 10%;
+  grid-template-rows: 20% 1fr 20%;
   grid-template-columns: 15% 1fr 15%;
   grid-template-areas: 
     "desc desc desc"
     "screenshot screenshot screenshot"
-    "links . .";
+    ". links .";
 
     &--screenshot {
       grid-area: screenshot;
@@ -214,44 +218,160 @@ body {
       &_BUVIE {
         color: #A33944;
         // display: inline-block;
+        cursor: default;
       }
 
       &_text {
         font-family: 'Lato', sans-serif;
         color: #8B8B99;
         // display: inline-block;
+        cursor: default;
       }
     }
 
     &--links {
       grid-area: links;
-      // background-color: #005a69;
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr 20%;
+      grid-template-areas: 
+        "techlist site"
+        "techlist git";
+      
+      &_techlist {
+        grid-area: techlist;
+        font-family: "Lato", sans-serif;
+        font-size: 2rem;
+        align-self: center;
+        color: #8B8B99;
+        cursor: default;
+      }
+
+      &_site-btn {
+        grid-area: site;
+        background-color: #A33944;
+        border-radius: 2px;
+        color: white;
+        border: none;
+        cursor: pointer;
+        justify-self: center;
+        align-self: center;
+        height: 4rem;
+        width: 14rem;
+        text-align: center;
+        font-size: 1.5rem;
+        font-family: "Lato", sans-serif;
+        font-weight: 700;
+      }
+
+      &_github-btn {
+        grid-area: git;
+        background-color: #A33944;
+        border-radius: 2px;
+        color: white;
+        border: none;
+        cursor: pointer;
+        justify-self: center;
+        align-self: center;
+        height: 4rem;
+        width: 14rem;
+        text-align: center;
+        font-size: 1.5rem;
+        font-family: "Lato", sans-serif;
+        font-weight: 700;
+      }
     }
 }
 
 .second-project {
   height: 150vh;
-  background-color: #580303;
+  background-color: #f0eee7;
+  padding: 5rem;
   display: grid;
-  grid-template-rows: 1fr 0.25fr;
-  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 20% 1fr 20%;
+  grid-template-columns: 15% 1fr 15%;
   grid-template-areas: 
-    "screenshot desc"
-    "links desc";
+    "desc desc desc"
+    "screenshot screenshot screenshot"
+    ". links .";
 
     &--screenshot {
       grid-area: screenshot;
-      background-color: #fff;
+      display: flex;
+      justify-content: center;
+
     }
 
     &--description {
       grid-area: desc;
-      background-color: #3C485E;
+      font-size: 3rem;
+      text-align: center;
+
+      &_PETDROP {
+        color: #e78ea2;
+        // display: inline-block;
+        cursor: default;
+      }
+
+      &_text {
+        font-family: 'Lato', sans-serif;
+        color: black;
+        // display: inline-block;
+        cursor: default;
+      }
     }
 
     &--links {
       grid-area: links;
-      background-color: #005a69;
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr 20%;
+      grid-template-areas: 
+        "techlist site"
+        "techlist git";
+      
+      &_techlist {
+        grid-area: techlist;
+        font-family: "Lato", sans-serif;
+        font-size: 2rem;
+        align-self: center;
+        color: black;
+        cursor: default;
+      }
+
+      &_site-btn {
+        grid-area: site;
+        background-color: #478fd5;
+        border-radius: 2px;
+        color: black;
+        border: none;
+        cursor: pointer;
+        justify-self: center;
+        align-self: center;
+        height: 4rem;
+        width: 14rem;
+        text-align: center;
+        font-size: 1.5rem;
+        font-family: "Lato", sans-serif;
+        font-weight: 700;
+      }
+
+      &_github-btn {
+        grid-area: git;
+        background-color: #3fa959;
+        border-radius: 2px;
+        color: black;
+        border: none;
+        cursor: pointer;
+        justify-self: center;
+        align-self: center;
+        height: 4rem;
+        width: 14rem;
+        text-align: center;
+        font-size: 1.5rem;
+        font-family: "Lato", sans-serif;
+        font-weight: 700;
+      }
     }
 }
 

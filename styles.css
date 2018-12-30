@@ -73,7 +73,8 @@ body {
     grid-column-start: 2;
     display: grid;
     grid-template-rows: 1fr 1fr;
-    text-align: center; }
+    text-align: center;
+    cursor: default; }
     .container_textbox_about-me {
       grid-row-start: 1;
       display: inline-block;
@@ -100,13 +101,15 @@ body {
     grid-area: tech;
     background-color: #005a69;
     text-align: center;
-    font-size: 3rem; }
+    font-size: 3rem;
+    cursor: default; }
   .second-container_about-me-text {
     grid-area: text;
     background-color: #1e1e1e;
     font-size: 3rem;
     text-align: center;
-    align-content: center; }
+    align-content: center;
+    cursor: default; }
     .second-container_about-me-text-p {
       align-self: center; }
 
@@ -122,16 +125,17 @@ body {
   z-index: -1;
   font-size: 3rem; }
   .projects-intro_PROJECTS {
-    color: white; }
+    color: white;
+    cursor: default; }
 
 .first-project {
   height: 150vh;
   background-color: #212032;
   padding: 5rem;
   display: grid;
-  grid-template-rows: 20% 1fr 10%;
+  grid-template-rows: 20% 1fr 20%;
   grid-template-columns: 15% 1fr 15%;
-  grid-template-areas: "desc desc desc" "screenshot screenshot screenshot" "links . ."; }
+  grid-template-areas: "desc desc desc" "screenshot screenshot screenshot" ". links ."; }
   .first-project--screenshot {
     grid-area: screenshot;
     display: flex;
@@ -145,29 +149,122 @@ body {
     font-size: 3rem;
     text-align: center; }
     .first-project--description_BUVIE {
-      color: #A33944; }
+      color: #A33944;
+      cursor: default; }
     .first-project--description_text {
       font-family: 'Lato', sans-serif;
-      color: #8B8B99; }
+      color: #8B8B99;
+      cursor: default; }
   .first-project--links {
-    grid-area: links; }
+    grid-area: links;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 20%;
+    grid-template-areas: "techlist site" "techlist git"; }
+    .first-project--links_techlist {
+      grid-area: techlist;
+      font-family: "Lato", sans-serif;
+      font-size: 2rem;
+      align-self: center;
+      color: #8B8B99;
+      cursor: default; }
+    .first-project--links_site-btn {
+      grid-area: site;
+      background-color: #A33944;
+      border-radius: 2px;
+      color: white;
+      border: none;
+      cursor: pointer;
+      justify-self: center;
+      align-self: center;
+      height: 4rem;
+      width: 14rem;
+      text-align: center;
+      font-size: 1.5rem;
+      font-family: "Lato", sans-serif;
+      font-weight: 700; }
+    .first-project--links_github-btn {
+      grid-area: git;
+      background-color: #A33944;
+      border-radius: 2px;
+      color: white;
+      border: none;
+      cursor: pointer;
+      justify-self: center;
+      align-self: center;
+      height: 4rem;
+      width: 14rem;
+      text-align: center;
+      font-size: 1.5rem;
+      font-family: "Lato", sans-serif;
+      font-weight: 700; }
 
 .second-project {
   height: 150vh;
-  background-color: #580303;
+  background-color: #f0eee7;
+  padding: 5rem;
   display: grid;
-  grid-template-rows: 1fr 0.25fr;
-  grid-template-columns: 2fr 1fr;
-  grid-template-areas: "screenshot desc" "links desc"; }
+  grid-template-rows: 20% 1fr 20%;
+  grid-template-columns: 15% 1fr 15%;
+  grid-template-areas: "desc desc desc" "screenshot screenshot screenshot" ". links ."; }
   .second-project--screenshot {
     grid-area: screenshot;
-    background-color: #fff; }
+    display: flex;
+    justify-content: center; }
   .second-project--description {
     grid-area: desc;
-    background-color: #3C485E; }
+    font-size: 3rem;
+    text-align: center; }
+    .second-project--description_PETDROP {
+      color: #e78ea2;
+      cursor: default; }
+    .second-project--description_text {
+      font-family: 'Lato', sans-serif;
+      color: black;
+      cursor: default; }
   .second-project--links {
     grid-area: links;
-    background-color: #005a69; }
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 20%;
+    grid-template-areas: "techlist site" "techlist git"; }
+    .second-project--links_techlist {
+      grid-area: techlist;
+      font-family: "Lato", sans-serif;
+      font-size: 2rem;
+      align-self: center;
+      color: black;
+      cursor: default; }
+    .second-project--links_site-btn {
+      grid-area: site;
+      background-color: #478fd5;
+      border-radius: 2px;
+      color: black;
+      border: none;
+      cursor: pointer;
+      justify-self: center;
+      align-self: center;
+      height: 4rem;
+      width: 14rem;
+      text-align: center;
+      font-size: 1.5rem;
+      font-family: "Lato", sans-serif;
+      font-weight: 700; }
+    .second-project--links_github-btn {
+      grid-area: git;
+      background-color: #3fa959;
+      border-radius: 2px;
+      color: black;
+      border: none;
+      cursor: pointer;
+      justify-self: center;
+      align-self: center;
+      height: 4rem;
+      width: 14rem;
+      text-align: center;
+      font-size: 1.5rem;
+      font-family: "Lato", sans-serif;
+      font-weight: 700; }
 
 .third-project {
   height: 150vh;
