@@ -201,7 +201,7 @@ body {
 
 .second-project {
   height: 150vh;
-  background-color: #f0eee7;
+  background-color: #dad9d5;
   padding: 5rem;
   display: grid;
   grid-template-rows: 20% 1fr 20%;
@@ -211,6 +211,9 @@ body {
     grid-area: screenshot;
     display: flex;
     justify-content: center; }
+    .second-project--screenshot_petdrop {
+      width: 90%;
+      height: 90%; }
   .second-project--description {
     grid-area: desc;
     font-size: 3rem;
@@ -278,6 +281,9 @@ body {
     grid-area: screenshot;
     display: flex;
     justify-content: center; }
+    .third-project--screenshot_studpoker {
+      width: 90%;
+      height: 90%; }
   .third-project--description {
     grid-area: desc;
     font-size: 3rem;
@@ -347,6 +353,9 @@ body {
     grid-area: screenshot;
     display: flex;
     justify-content: center; }
+    .fourth-project--screenshot_mouseai {
+      width: 90%;
+      height: 90%; }
   .fourth-project--description {
     grid-area: desc;
     font-size: 3rem;

@@ -285,7 +285,7 @@ body {
 
 .second-project {
   height: 150vh;
-  background-color: #f0eee7;
+  background-color: #dad9d5;
   padding: 5rem;
   display: grid;
   grid-template-rows: 20% 1fr 20%;
@@ -300,6 +300,10 @@ body {
       display: flex;
       justify-content: center;
 
+      &_petdrop {
+        width: 90%;
+        height: 90%;
+      }
     }
 
     &--description {
@@ -392,6 +396,10 @@ body {
       display: flex;
       justify-content: center;
 
+      &_studpoker {
+        width: 90%;
+        height: 90%;
+      }
     }
 
     &--description {
@@ -489,6 +497,10 @@ body {
       display: flex;
       justify-content: center;
 
+      &_mouseai {
+        width: 90%;
+        height: 90%;
+      }
     }
 
     &--description {
