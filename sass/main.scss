@@ -124,24 +124,47 @@ body {
 
 .second-container {
   height: 200vh;
-  background-color: $color-background-dark;
+  background-color: rgb(28, 39, 58);
   display: grid;
-  grid-template-rows: 1fr 0.5fr;
+  grid-template-rows: 20% 1fr 0.5fr;
   grid-template-columns: 0.5fr 1fr;
-  grid-template-areas: 
+  grid-template-areas:
+    "greet greet"
     "picture text"
-    "tech text";
+    "picture text";
+
+  &_greet {
+    grid-area: greet;
+    align-self: center;
+    justify-self: center;
+    font-size: 5rem;
+    font-family: "Heebo", sans-serif;
+  }
 
   &_picture {
     grid-area: picture;
-    background-color: #fff;
-    background-image: url(https://vignette.wikia.nocookie.net/napoleondynamite/images/0/04/Kip_Dynamite.jpg/revision/latest?cb=20120117222921);
-    background-size: cover;
+    background-color: $color-background-dark;
+    // background-image: url(../images/myselfone.jpg);
+    // background-size: cover;
+    &--one {
+      width: 70%;
+      height: 50%;
+      transform: translateY(-10%);
+      position: relative;
+      left: 2rem;
+    }
+
+    &--two {
+      width: 90%;
+      height: 30%;
+      position: relative;
+      left: 5rem;     
+    }
   }
 
   &_tech-stack {
     grid-area: tech;
-    background-color: #005a69;
+    background-color: $color-background-dark;
     text-align: center;
     font-size: 3rem;
     cursor: default;
@@ -151,18 +174,25 @@ body {
     grid-area: text;
     background-color: $color-background-dark;
     font-size: 3rem;
-    text-align: center;
+    text-align: left;
     align-content: center;
+    padding: 3.5rem;
     cursor: default;
 
+    &-intro {
+      font-family: 'Heebo', sans-serif;
+    }
+
     &-p {
+      font-family: "Lato", sans-serif;
+      font-size: 2.6rem;
       align-self: center;
     }
   }
 }
 
 .projects-intro {
-  height: 40vh;
+  height: 25vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -176,6 +206,7 @@ body {
   z-index: -1;
   // text-align: center;
   font-size: 3rem;
+  font-family: "Heebo", sans-serif;
 
   &_PROJECTS {
     color: white;
@@ -219,6 +250,7 @@ body {
         color: #A33944;
         // display: inline-block;
         cursor: default;
+        font-family: "Heebo", sans-serif;
       }
 
       &_text {
@@ -315,6 +347,7 @@ body {
         color: #e78ea2;
         // display: inline-block;
         cursor: default;
+        font-family: "Heebo", sans-serif;
       }
 
       &_text {
@@ -411,6 +444,7 @@ body {
         color: goldenrod;
         // display: inline-block;
         cursor: default;
+        font-family: "Heebo", sans-serif;
       }
 
       &_text {
@@ -512,6 +546,7 @@ body {
         color: #33c0b9;
         // display: inline-block;
         cursor: default;
+        font-family: "Heebo", sans-serif;
       }
 
       &_text {
@@ -556,4 +591,21 @@ body {
         font-weight: 700;
       }
     }
+}
+
+.contact-area {
+  background-color: rgb(29, 36, 48);
+  color: white;
+  height: 30vh;
+  font-size: 2rem;
+  text-align: center;
+  padding: 3rem;
+  cursor: default;
+
+  & a {
+    font-family: "Lato", sans-serif;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+  }
 }
