@@ -609,3 +609,193 @@ body {
     color: white;
   }
 }
+
+@media (max-width: 600px) {
+  .heading {
+    grid-template-columns: 1fr;
+    position: absolute;
+  }
+
+  .name-logo {
+    justify-self: center;
+  }
+
+  .navbar_links {
+    display: none;
+  }
+
+  .container {
+    font-size: 2rem;
+  }
+
+  .second-container {
+    height: 125vh;
+    grid-template-rows: 10% 1fr 0.5fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+      "greet"
+      "text"
+      "text";
+
+    &_greet {
+      font-size: 3rem;
+    }
+
+    &_picture {
+      display: none;
+    }
+
+    &_about-me-text {
+      font-size: 2rem;
+
+      &-p {
+        font-size: 1.8rem;
+      }
+    }
+  }
+
+  .projects-intro {
+    height: 15vh;
+    font-size: 2.5rem;
+  }
+
+  .first-project {
+    padding: 1rem;
+    height: 70vh;
+    grid-template-rows: 35% 1fr 10%;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+      "desc"
+      "screenshot"
+      "links";
+
+    &--screenshot {
+
+      &_buvie {
+        width: 90%;
+        height: 70%;
+      }
+    }
+
+    &--description {
+      font-size: 2rem;
+    }
+
+    &--links {
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: 
+        "site git";
+
+        &_techlist {
+          display: none;
+        }
+    }
+  }
+
+  .second-project {
+    padding: 1rem;
+    height: 70vh;
+    grid-template-rows: 35% 1fr 10%;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+      "desc"
+      "screenshot"
+      "links";
+
+    &--screenshot {
+
+      &_petdrop {
+        width: 90%;
+        height: 70%;
+      }
+    }
+
+    &--description {
+      font-size: 2rem;
+    }
+
+    &--links {
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: 
+        "site git";
+
+        &_techlist {
+          display: none;
+        }
+    }
+  }
+
+  .third-project {
+    padding: 1rem;
+    height: 70vh;
+    grid-template-rows: 35% 1fr 10%;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+      "desc"
+      "screenshot"
+      "links";
+
+    &--screenshot {
+
+      &_studpoker {
+        width: 90%;
+        height: 70%;
+      }
+    }
+
+    &--description {
+      font-size: 2rem;
+    }
+
+    &--links {
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: 
+        "site git";
+
+        &_techlist {
+          display: none;
+        }
+    }
+  }
+
+  .fourth-project {
+    padding: 1rem;
+    height: 70vh;
+    grid-template-rows: 35% 1fr 10%;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+      "desc"
+      "screenshot"
+      "links";
+
+    &--screenshot {
+
+      &_mouseai {
+        width: 90%;
+        height: 70%;
+      }
+    }
+
+    &--description {
+      font-size: 2rem;
+    }
+
+    &--links {
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr;
+      grid-template-areas: 
+        "git";
+
+        &_techlist {
+          display: none;
+        }
+    }
+  }
+
+  .contact-area {
+    font-size: 1.6rem;
+  }
+}

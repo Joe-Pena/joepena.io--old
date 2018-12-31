@@ -434,3 +434,100 @@ body {
     cursor: pointer;
     text-decoration: none;
     color: white; }
+
+@media (max-width: 600px) {
+  .heading {
+    grid-template-columns: 1fr;
+    position: absolute; }
+  .name-logo {
+    justify-self: center; }
+  .navbar_links {
+    display: none; }
+  .container {
+    font-size: 2rem; }
+  .second-container {
+    height: 125vh;
+    grid-template-rows: 10% 1fr 0.5fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: "greet" "text" "text"; }
+    .second-container_greet {
+      font-size: 3rem; }
+    .second-container_picture {
+      display: none; }
+    .second-container_about-me-text {
+      font-size: 2rem; }
+      .second-container_about-me-text-p {
+        font-size: 1.8rem; }
+  .projects-intro {
+    height: 15vh;
+    font-size: 2.5rem; }
+  .first-project {
+    padding: 1rem;
+    height: 70vh;
+    grid-template-rows: 35% 1fr 10%;
+    grid-template-columns: 1fr;
+    grid-template-areas: "desc" "screenshot" "links"; }
+    .first-project--screenshot_buvie {
+      width: 90%;
+      height: 70%; }
+    .first-project--description {
+      font-size: 2rem; }
+    .first-project--links {
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "site git"; }
+      .first-project--links_techlist {
+        display: none; }
+  .second-project {
+    padding: 1rem;
+    height: 70vh;
+    grid-template-rows: 35% 1fr 10%;
+    grid-template-columns: 1fr;
+    grid-template-areas: "desc" "screenshot" "links"; }
+    .second-project--screenshot_petdrop {
+      width: 90%;
+      height: 70%; }
+    .second-project--description {
+      font-size: 2rem; }
+    .second-project--links {
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "site git"; }
+      .second-project--links_techlist {
+        display: none; }
+  .third-project {
+    padding: 1rem;
+    height: 70vh;
+    grid-template-rows: 35% 1fr 10%;
+    grid-template-columns: 1fr;
+    grid-template-areas: "desc" "screenshot" "links"; }
+    .third-project--screenshot_studpoker {
+      width: 90%;
+      height: 70%; }
+    .third-project--description {
+      font-size: 2rem; }
+    .third-project--links {
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "site git"; }
+      .third-project--links_techlist {
+        display: none; }
+  .fourth-project {
+    padding: 1rem;
+    height: 70vh;
+    grid-template-rows: 35% 1fr 10%;
+    grid-template-columns: 1fr;
+    grid-template-areas: "desc" "screenshot" "links"; }
+    .fourth-project--screenshot_mouseai {
+      width: 90%;
+      height: 70%; }
+    .fourth-project--description {
+      font-size: 2rem; }
+    .fourth-project--links {
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr;
+      grid-template-areas: "git"; }
+      .fourth-project--links_techlist {
+        display: none; }
+  .contact-area {
+    font-size: 1.6rem; } }
