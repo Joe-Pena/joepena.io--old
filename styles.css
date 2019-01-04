@@ -102,7 +102,7 @@ body {
     grid-area: picture;
     background-color: #1e1e1e; }
     .second-container_picture--one {
-      width: 70%;
+      width: 75%;
       height: 50%;
       transform: translateY(-10%);
       position: relative;
