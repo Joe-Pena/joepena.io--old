@@ -147,8 +147,8 @@ body {
     // background-image: url(../images/myselfone.jpg);
     // background-size: cover;
     &--one {
-      width: 75%;
-      height: 50%;
+      width: 90%;
+      height: auto;
       transform: translateY(-10%);
       position: relative;
       left: 2rem;
@@ -156,9 +156,9 @@ body {
 
     &--two {
       width: 90%;
-      height: 30%;
+      height: auto;
       position: relative;
-      left: 5rem;     
+      left: 2rem;     
     }
   }
 

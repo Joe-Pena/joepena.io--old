@@ -102,16 +102,16 @@ body {
     grid-area: picture;
     background-color: #1e1e1e; }
     .second-container_picture--one {
-      width: 75%;
-      height: 50%;
+      width: 90%;
+      height: auto;
       transform: translateY(-10%);
       position: relative;
       left: 2rem; }
     .second-container_picture--two {
       width: 90%;
-      height: 30%;
+      height: auto;
       position: relative;
-      left: 5rem; }
+      left: 2rem; }
   .second-container_tech-stack {
     grid-area: tech;
     background-color: #1e1e1e;
