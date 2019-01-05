@@ -82,8 +82,7 @@ body {
       .container_textbox_about-me--two {
         grid-row-start: 2;
         display: inline-block;
-        width: 100%;
-        margin-top: 1rem; }
+        width: 100%; }
 
 .second-container {
   height: 200vh;
