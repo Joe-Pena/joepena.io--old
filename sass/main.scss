@@ -592,14 +592,123 @@ body {
     }
 }
 
+.fifth-project {
+  height: 150vh;
+  background-color: #ffffff;
+  padding: 5rem;
+  display: grid;
+  grid-template-rows: 20% 1fr 20%;
+  grid-template-columns: 15% 1fr 15%;
+  grid-template-areas: 
+    "desc desc desc"
+    "screenshot screenshot screenshot"
+    ". links .";
+
+    &--screenshot {
+      grid-area: screenshot;
+      display: flex;
+      justify-content: center;
+
+      &_citymain {
+        width: 90%;
+        height: 90%;
+      }
+    }
+
+    &--description {
+      grid-area: desc;
+      font-size: 3rem;
+      text-align: center;
+
+      &_CITYMAIN {
+        color: rgb(32, 243, 162);
+        // display: inline-block;
+        cursor: default;
+        font-family: "Heebo", sans-serif;
+      }
+
+      &_text {
+        font-family: 'Lato', sans-serif;
+        color: black;
+        // display: inline-block;
+        cursor: default;
+      }
+    }
+
+    &--links {
+      grid-area: links;
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr 20%;
+      grid-template-areas: 
+        "techlist site"
+        "techlist git";
+      
+      &_techlist {
+        grid-area: techlist;
+        font-family: "Lato", sans-serif;
+        font-size: 2rem;
+        align-self: center;
+        color: black;
+        cursor: default;
+      }
+
+      &_site-btn {
+        grid-area: site;
+        background-color: rgb(32, 243, 162);
+        border-radius: 2px;
+        color: black;
+        border: none;
+        cursor: pointer;
+        justify-self: center;
+        align-self: center;
+        height: 4rem;
+        width: 14rem;
+        text-align: center;
+        font-size: 1.5rem;
+        font-family: "Lato", sans-serif;
+        font-weight: 700;
+      }
+
+      &_github-btn {
+        grid-area: git;
+        background-color: rgb(32, 243, 162);
+        border-radius: 2px;
+        color: black;
+        border: none;
+        cursor: pointer;
+        justify-self: center;
+        align-self: center;
+        height: 4rem;
+        width: 14rem;
+        text-align: center;
+        font-size: 1.5rem;
+        font-family: "Lato", sans-serif;
+        font-weight: 700;
+      }
+    }
+}
+
 .contact-area {
+  display: grid;
+  grid-template-columns: 1fr 30%;
+  grid-template-areas: "contact made";
   background-color: rgb(29, 36, 48);
   color: white;
   height: 30vh;
   font-size: 2rem;
-  text-align: center;
+  text-align: left;
   padding: 3rem;
   cursor: default;
+
+  &--email {
+    grid-area: contact;
+  }
+
+  &--made-with {
+    grid-area: made;
+    font-family: "Lato", sans-serif;
+  }
 
   & a {
     font-family: "Lato", sans-serif;
@@ -787,6 +896,40 @@ body {
       grid-template-columns: 1fr;
       grid-template-areas: 
         "git";
+
+        &_techlist {
+          display: none;
+        }
+    }
+  }
+
+  .fifth-project {
+    padding: 1rem;
+    height: 70vh;
+    grid-template-rows: 35% 1fr 10%;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+      "desc"
+      "screenshot"
+      "links";
+
+    &--screenshot {
+
+      &_citymain {
+        width: 90%;
+        height: 70%;
+      }
+    }
+
+    &--description {
+      font-size: 2rem;
+    }
+
+    &--links {
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: 
+        "site git";
 
         &_techlist {
           display: none;
