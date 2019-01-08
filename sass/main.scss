@@ -32,7 +32,7 @@ body {
   font-size: 1.5rem;
   display: grid;
   grid-template-rows: 1fr;
-  grid-template-columns: 1fr 1.5fr 1fr;
+  grid-template-columns: 20% 1.5fr 1fr;
   position: fixed;
   text-align: center;
   height: 6vh;
@@ -42,9 +42,10 @@ body {
   .name-logo {
     display: inline-block;
     width: 20rem;
-    margin-left: 3rem;
+    // margin-left: 3rem;
     margin-top: -0.1rem;
     grid-column-start: 1;
+    justify-self: center;
   }
 }
 
@@ -725,7 +726,7 @@ body {
   }
 
   .name-logo {
-    justify-self: center;
+
   }
 
   .navbar_links {
@@ -734,6 +735,7 @@ body {
 
   .container {
     font-size: 2vh;
+    background-attachment: scroll;
   }
 
   .second-container {
@@ -765,6 +767,7 @@ body {
   .projects-intro {
     height: 15vh;
     font-size: 2vh;
+    background-attachment: scroll;
   }
 
   .first-project {
