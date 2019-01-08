@@ -95,7 +95,7 @@ body {
     grid-area: greet;
     align-self: center;
     justify-self: center;
-    font-size: 5rem;
+    font-size: 4.5vw;
     font-family: "Heebo", sans-serif; }
   .second-container_picture {
     grid-area: picture;
@@ -120,7 +120,7 @@ body {
   .second-container_about-me-text {
     grid-area: text;
     background-color: #1e1e1e;
-    font-size: 3rem;
+    font-size: 2.5vw;
     text-align: left;
     align-content: center;
     padding: 3.5rem;
@@ -129,7 +129,7 @@ body {
       font-family: 'Heebo', sans-serif; }
     .second-container_about-me-text-p {
       font-family: "Lato", sans-serif;
-      font-size: 2.6rem;
+      font-size: 4vh;
       align-self: center; }
 
 .projects-intro {
@@ -513,7 +513,7 @@ body {
     text-decoration: none;
     color: white; }
 
-@media (max-width: 600px) {
+@media (max-width: 724px) {
   .heading {
     grid-template-columns: 1fr;
     position: absolute; }
@@ -522,23 +522,23 @@ body {
   .navbar_links {
     display: none; }
   .container {
-    font-size: 2rem; }
+    font-size: 2vh; }
   .second-container {
     height: 125vh;
     grid-template-rows: 10% 1fr 0.5fr;
     grid-template-columns: 1fr;
     grid-template-areas: "greet" "text" "text"; }
     .second-container_greet {
-      font-size: 3rem; }
+      font-size: 2.5vh; }
     .second-container_picture {
       display: none; }
     .second-container_about-me-text {
-      font-size: 2rem; }
+      font-size: 2.5vh; }
       .second-container_about-me-text-p {
-        font-size: 1.8rem; }
+        font-size: 2vh; }
   .projects-intro {
     height: 15vh;
-    font-size: 2.5rem; }
+    font-size: 2vh; }
   .first-project {
     padding: 1rem;
     height: 70vh;
@@ -549,7 +549,7 @@ body {
       width: 90%;
       height: 70%; }
     .first-project--description {
-      font-size: 2rem; }
+      font-size: 2vh; }
     .first-project--links {
       grid-template-rows: 1fr;
       grid-template-columns: 1fr 1fr;
@@ -566,7 +566,7 @@ body {
       width: 90%;
       height: 70%; }
     .second-project--description {
-      font-size: 2rem; }
+      font-size: 2vh; }
     .second-project--links {
       grid-template-rows: 1fr;
       grid-template-columns: 1fr 1fr;
@@ -583,7 +583,7 @@ body {
       width: 90%;
       height: 70%; }
     .third-project--description {
-      font-size: 2rem; }
+      font-size: 2vh; }
     .third-project--links {
       grid-template-rows: 1fr;
       grid-template-columns: 1fr 1fr;
@@ -600,7 +600,7 @@ body {
       width: 90%;
       height: 70%; }
     .fourth-project--description {
-      font-size: 2rem; }
+      font-size: 2vh; }
     .fourth-project--links {
       grid-template-rows: 1fr;
       grid-template-columns: 1fr;
@@ -617,7 +617,7 @@ body {
       width: 90%;
       height: 70%; }
     .fifth-project--description {
-      font-size: 2rem; }
+      font-size: 2vh; }
     .fifth-project--links {
       grid-template-rows: 1fr;
       grid-template-columns: 1fr 1fr;
@@ -625,4 +625,4 @@ body {
       .fifth-project--links_techlist {
         display: none; }
   .contact-area {
-    font-size: 1.6rem; } }
+    font-size: 1.6vh; } }

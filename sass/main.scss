@@ -136,7 +136,7 @@ body {
     grid-area: greet;
     align-self: center;
     justify-self: center;
-    font-size: 5rem;
+    font-size: 4.5vw;
     font-family: "Heebo", sans-serif;
   }
 
@@ -172,7 +172,7 @@ body {
   &_about-me-text {
     grid-area: text;
     background-color: $color-background-dark;
-    font-size: 3rem;
+    font-size: 2.5vw;
     text-align: left;
     align-content: center;
     padding: 3.5rem;
@@ -184,7 +184,7 @@ body {
 
     &-p {
       font-family: "Lato", sans-serif;
-      font-size: 2.6rem;
+      font-size: 4vh;
       align-self: center;
     }
   }
@@ -718,7 +718,7 @@ body {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 724px) {
   .heading {
     grid-template-columns: 1fr;
     position: absolute;
@@ -733,7 +733,7 @@ body {
   }
 
   .container {
-    font-size: 2rem;
+    font-size: 2vh;
   }
 
   .second-container {
@@ -746,7 +746,7 @@ body {
       "text";
 
     &_greet {
-      font-size: 3rem;
+      font-size: 2.5vh;
     }
 
     &_picture {
@@ -754,17 +754,17 @@ body {
     }
 
     &_about-me-text {
-      font-size: 2rem;
+      font-size: 2.5vh;
 
       &-p {
-        font-size: 1.8rem;
+        font-size: 2vh;
       }
     }
   }
 
   .projects-intro {
     height: 15vh;
-    font-size: 2.5rem;
+    font-size: 2vh;
   }
 
   .first-project {
@@ -786,7 +786,7 @@ body {
     }
 
     &--description {
-      font-size: 2rem;
+      font-size: 2vh;
     }
 
     &--links {
@@ -820,7 +820,7 @@ body {
     }
 
     &--description {
-      font-size: 2rem;
+      font-size: 2vh;
     }
 
     &--links {
@@ -854,7 +854,7 @@ body {
     }
 
     &--description {
-      font-size: 2rem;
+      font-size: 2vh;
     }
 
     &--links {
@@ -888,7 +888,7 @@ body {
     }
 
     &--description {
-      font-size: 2rem;
+      font-size: 2vh;
     }
 
     &--links {
@@ -922,7 +922,7 @@ body {
     }
 
     &--description {
-      font-size: 2rem;
+      font-size: 2vh;
     }
 
     &--links {
@@ -938,6 +938,6 @@ body {
   }
 
   .contact-area {
-    font-size: 1.6rem;
+    font-size: 1.6vh;
   }
 }
