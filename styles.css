@@ -294,7 +294,7 @@ body {
 
 .third-project {
   height: 150vh;
-  background-color: #04300b;
+  background-color: #0a0a0a;
   padding: 5rem;
   display: grid;
   grid-template-rows: 20% 1fr 20%;
@@ -312,7 +312,7 @@ body {
     font-size: 3rem;
     text-align: center; }
     .third-project--description_STUDPOKER {
-      color: goldenrod;
+      color: red;
       cursor: default;
       font-family: "Heebo", sans-serif; }
     .third-project--description_text {
@@ -334,7 +334,7 @@ body {
       cursor: default; }
     .third-project--links_site-btn {
       grid-area: site;
-      background-color: goldenrod;
+      background-color: white;
       border-radius: 2px;
       color: black;
       border: none;
@@ -349,7 +349,7 @@ body {
       font-weight: 700; }
     .third-project--links_github-btn {
       grid-area: git;
-      background-color: goldenrod;
+      background-color: red;
       border-radius: 2px;
       color: black;
       border: none;
