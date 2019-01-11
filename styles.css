@@ -91,7 +91,7 @@ body {
   display: grid;
   grid-template-rows: 20% 1fr 0.5fr;
   grid-template-columns: 0.5fr 1fr;
-  grid-template-areas: "greet greet" "picture text" "picture text"; }
+  grid-template-areas: "greet greet" "picture text" "picture text"; }
   .second-container_greet {
     grid-area: greet;
     align-self: center;
@@ -156,7 +156,7 @@ body {
   display: grid;
   grid-template-rows: 20% 1fr 20%;
   grid-template-columns: 15% 1fr 15%;
-  grid-template-areas: "desc desc desc" "screenshot screenshot screenshot" ". links ."; }
+  grid-template-areas: "desc desc desc" "screenshot screenshot screenshot" ". links ."; }
   .first-project--screenshot {
     grid-area: screenshot;
     display: flex;
@@ -182,7 +182,7 @@ body {
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 20%;
-    grid-template-areas: "techlist site" "techlist git"; }
+    grid-template-areas: "techlist site" "techlist git"; }
     .first-project--links_techlist {
       grid-area: techlist;
       font-family: "Lato", sans-serif;
@@ -228,7 +228,7 @@ body {
   display: grid;
   grid-template-rows: 20% 1fr 20%;
   grid-template-columns: 15% 1fr 15%;
-  grid-template-areas: "desc desc desc" "screenshot screenshot screenshot" ". links ."; }
+  grid-template-areas: "desc desc desc" "screenshot screenshot screenshot" ". links ."; }
   .second-project--screenshot {
     grid-area: screenshot;
     display: flex;
@@ -253,7 +253,7 @@ body {
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 20%;
-    grid-template-areas: "techlist site" "techlist git"; }
+    grid-template-areas: "techlist site" "techlist git"; }
     .second-project--links_techlist {
       grid-area: techlist;
       font-family: "Lato", sans-serif;
@@ -299,7 +299,7 @@ body {
   display: grid;
   grid-template-rows: 20% 1fr 20%;
   grid-template-columns: 15% 1fr 15%;
-  grid-template-areas: "desc desc desc" "screenshot screenshot screenshot" ". links ."; }
+  grid-template-areas: "desc desc desc" "screenshot screenshot screenshot" ". links ."; }
   .third-project--screenshot {
     grid-area: screenshot;
     display: flex;
@@ -324,7 +324,7 @@ body {
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 20%;
-    grid-template-areas: "techlist site" "techlist git"; }
+    grid-template-areas: "techlist site" "techlist git"; }
     .third-project--links_techlist {
       grid-area: techlist;
       font-family: "Lato", sans-serif;
@@ -372,7 +372,7 @@ body {
   display: grid;
   grid-template-rows: 20% 1fr 20%;
   grid-template-columns: 15% 1fr 15%;
-  grid-template-areas: "desc desc desc" "screenshot screenshot screenshot" ". links ."; }
+  grid-template-areas: "desc desc desc" "screenshot screenshot screenshot" ". links ."; }
   .fourth-project--screenshot {
     grid-area: screenshot;
     display: flex;
@@ -428,7 +428,7 @@ body {
   display: grid;
   grid-template-rows: 20% 1fr 20%;
   grid-template-columns: 15% 1fr 15%;
-  grid-template-areas: "desc desc desc" "screenshot screenshot screenshot" ". links ."; }
+  grid-template-areas: "desc desc desc" "screenshot screenshot screenshot" ". links ."; }
   .fifth-project--screenshot {
     grid-area: screenshot;
     display: flex;
@@ -453,7 +453,7 @@ body {
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 20%;
-    grid-template-areas: "techlist site" "techlist git"; }
+    grid-template-areas: "techlist site" "techlist git"; }
     .fifth-project--links_techlist {
       grid-area: techlist;
       font-family: "Lato", sans-serif;
@@ -537,12 +537,12 @@ body {
     display: none; }
   .container {
     font-size: 2vh;
-    background-attachment: scroll; }
+    background-attachment: unset; }
   .second-container {
     height: 125vh;
     grid-template-rows: 10% 1fr 0.5fr;
     grid-template-columns: 1fr;
-    grid-template-areas: "greet" "text" "text"; }
+    grid-template-areas: "greet" "text" "text"; }
     .second-container_greet {
       font-size: 2.5vh; }
     .second-container_picture {
@@ -554,13 +554,13 @@ body {
   .projects-intro {
     height: 15vh;
     font-size: 2vh;
-    background-attachment: scroll; }
+    background-attachment: unset; }
   .first-project {
     padding: 1rem;
     height: 70vh;
     grid-template-rows: 35% 1fr 10%;
     grid-template-columns: 1fr;
-    grid-template-areas: "desc" "screenshot" "links"; }
+    grid-template-areas: "desc" "screenshot" "links"; }
     .first-project--screenshot_buvie {
       width: 90%;
       height: 70%; }
@@ -577,7 +577,7 @@ body {
     height: 70vh;
     grid-template-rows: 35% 1fr 10%;
     grid-template-columns: 1fr;
-    grid-template-areas: "desc" "screenshot" "links"; }
+    grid-template-areas: "desc" "screenshot" "links"; }
     .second-project--screenshot_petdrop {
       width: 90%;
       height: 70%; }
@@ -594,7 +594,7 @@ body {
     height: 70vh;
     grid-template-rows: 35% 1fr 10%;
     grid-template-columns: 1fr;
-    grid-template-areas: "desc" "screenshot" "links"; }
+    grid-template-areas: "desc" "screenshot" "links"; }
     .third-project--screenshot_studpoker {
       width: 90%;
       height: 70%; }
@@ -611,7 +611,7 @@ body {
     height: 70vh;
     grid-template-rows: 35% 1fr 10%;
     grid-template-columns: 1fr;
-    grid-template-areas: "desc" "screenshot" "links"; }
+    grid-template-areas: "desc" "screenshot" "links"; }
     .fourth-project--screenshot_mouseai {
       width: 90%;
       height: 70%; }
@@ -628,7 +628,7 @@ body {
     height: 70vh;
     grid-template-rows: 35% 1fr 10%;
     grid-template-columns: 1fr;
-    grid-template-areas: "desc" "screenshot" "links"; }
+    grid-template-areas: "desc" "screenshot" "links"; }
     .fifth-project--screenshot_citymain {
       width: 90%;
       height: 70%; }
@@ -643,5 +643,5 @@ body {
   .contact-area {
     font-size: 1.6vh; }
   .particles-js-canvas-el {
-    height: 70vh;
+    height: 80vh;
     margin: -1rem; } }

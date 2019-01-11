@@ -766,7 +766,7 @@ body {
 
   .container {
     font-size: 2vh;
-    background-attachment: scroll;
+    background-attachment: unset;
   }
 
   .second-container {
@@ -798,7 +798,7 @@ body {
   .projects-intro {
     height: 15vh;
     font-size: 2vh;
-    background-attachment: scroll;
+    background-attachment: unset;
   }
 
   .first-project {
@@ -976,7 +976,7 @@ body {
   }
 
   .particles-js-canvas-el {
-    height: 70vh;
+    height: 80vh;
     margin: -1rem;
   }
 }
