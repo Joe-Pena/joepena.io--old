@@ -596,7 +596,7 @@ body {
 
 .fifth-project {
   height: 150vh;
-  background-color: #ffffff;
+  background-color: transparent;
   padding: 5rem;
   display: grid;
   grid-template-rows: 20% 1fr 20%;
@@ -726,6 +726,28 @@ body {
       color: #478fd5;
     }
   }
+}
+
+#particles-js{
+  background-color: transparent;
+  // background-size: cover;
+  // background-position: 50% 50%;
+  // background-repeat: no-repeat;
+}
+
+.particles-js-canvas-el {
+  // grid-row-start: 1;
+  // grid-row-end: 4;
+  // grid-column-start: 1;
+  // grid-column-end: 4;
+  position: absolute;
+  margin: -5rem;
+  // margin-left: -5rem;
+  // margin-right: -5rem;
+  width: 100%;
+  height: 150vh;
+  background-color: #fff;
+  z-index: -1;
 }
 
 @media (max-width: 724px) {
@@ -951,5 +973,10 @@ body {
 
   .contact-area {
     font-size: 1.6vh;
+  }
+
+  .particles-js-canvas-el {
+    height: 70vh;
+    margin: -1rem;
   }
 }
