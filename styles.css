@@ -644,6 +644,5 @@ body {
     font-size: 1.6vh; }
   .particles-js-canvas-el {
     height: 80vh;
-    width: 100%;
-    left: 0;
-    right: 0; } }
+    width: 100vw;
+    margin: -1rem; } }
