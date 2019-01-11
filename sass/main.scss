@@ -596,6 +596,7 @@ body {
 
 .fifth-project {
   height: 150vh;
+  position: relative;
   background-color: transparent;
   padding: 5rem;
   display: grid;
@@ -741,7 +742,11 @@ body {
   // grid-column-start: 1;
   // grid-column-end: 4;
   position: absolute;
-  margin: -5rem;
+  // margin: -5rem;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   // margin-left: -5rem;
   // margin-right: -5rem;
   width: 100%;
@@ -975,9 +980,9 @@ body {
     font-size: 1.6vh;
   }
 
-  .particles-js-canvas-el {
-    height: 80vh;
-    width: 100vw;
-    margin: -1rem;
-  }
+  // .particles-js-canvas-el {
+  //   height: 80vh;
+  //   width: 100vw;
+  //   margin: -1rem;
+  // }
 }
