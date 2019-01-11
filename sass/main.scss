@@ -698,7 +698,7 @@ body {
   background-color: rgb(29, 36, 48);
   color: white;
   height: 30vh;
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-align: left;
   padding: 3rem;
   cursor: default;
@@ -710,6 +710,10 @@ body {
   &--made-with {
     grid-area: made;
     font-family: "Lato", sans-serif;
+
+    &-main {
+      font-family: 'Monserrat', sans-serif;
+    }
   }
 
   & a {
@@ -717,6 +721,10 @@ body {
     cursor: pointer;
     text-decoration: none;
     color: white;
+
+    &:hover {
+      color: #478fd5;
+    }
   }
 }
 
