@@ -133,6 +133,27 @@ body {
       font-size: 4vh;
       align-self: center; }
 
+.technology-list {
+  display: grid;
+  grid-template-rows: 15% 1fr;
+  grid-template-areas: "intro" "techlist";
+  height: 30vw; }
+  .technology-list--intro {
+    grid-area: intro;
+    font-size: 2.5vw;
+    font-family: "Heebo", sans-serif;
+    justify-self: center; }
+  .technology-list--row {
+    grid-area: techlist;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap; }
+    .technology-list--row_item {
+      font-size: 7vw;
+      max-width: 7vw;
+      margin: 0 0.8rem; }
+
 .projects-intro {
   height: 25vh;
   display: flex;
@@ -555,6 +576,26 @@ body {
       font-size: 2.5vh; }
       .second-container_about-me-text-p {
         font-size: 2vh; }
+  .technology-list {
+    display: grid;
+    grid-template-rows: 15% 1fr;
+    grid-template-areas: "intro" "techlist";
+    height: 45vw; }
+    .technology-list--intro {
+      grid-area: intro;
+      font-size: 4vw;
+      font-family: "Heebo", sans-serif;
+      justify-self: center; }
+    .technology-list--row {
+      grid-area: techlist;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      flex-wrap: wrap; }
+      .technology-list--row_item {
+        font-size: 9vw;
+        max-width: 9vw;
+        margin: 0 0.5rem; }
   .projects-intro {
     height: 15vh;
     font-size: 2vh;
