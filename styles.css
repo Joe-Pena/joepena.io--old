@@ -86,12 +86,12 @@ body {
         width: 100%; }
 
 .second-container {
-  height: 200vh;
+  height: 160vh;
   background-color: #1c273a;
   display: grid;
   grid-template-rows: 20% 1fr 0.5fr;
   grid-template-columns: 0.5fr 1fr;
-  grid-template-areas: "greet greet" "picture text" "picture text"; }
+  grid-template-areas: "greet greet" "text text" "text text"; }
   .second-container_greet {
     grid-area: greet;
     align-self: center;
@@ -99,6 +99,7 @@ body {
     font-size: 4.5vw;
     font-family: "Heebo", sans-serif; }
   .second-container_picture {
+    display: none;
     grid-area: picture;
     background-color: #1e1e1e; }
     .second-container_picture--one {
@@ -124,7 +125,7 @@ body {
     font-size: 2.5vw;
     text-align: left;
     align-content: center;
-    padding: 3.5rem;
+    padding: 3.5rem 15rem;
     cursor: default; }
     .second-container_about-me-text-intro {
       font-family: 'Heebo', sans-serif; }
@@ -573,7 +574,8 @@ body {
     .second-container_picture {
       display: none; }
     .second-container_about-me-text {
-      font-size: 2.5vh; }
+      font-size: 2.5vh;
+      padding: 3.5rem; }
       .second-container_about-me-text-p {
         font-size: 2vh; }
   .technology-list {

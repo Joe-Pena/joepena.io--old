@@ -124,15 +124,15 @@ body {
 }
 
 .second-container {
-  height: 200vh;
+  height: 160vh; //Change back to 200vh when picture is back
   background-color: rgb(28, 39, 58);
   display: grid;
   grid-template-rows: 20% 1fr 0.5fr;
   grid-template-columns: 0.5fr 1fr;
   grid-template-areas:
     "greet greet"
-    "picture text"
-    "picture text";
+    "text text"
+    "text text"; //add picture back in the future
 
   &_greet {
     grid-area: greet;
@@ -143,6 +143,7 @@ body {
   }
 
   &_picture {
+    display: none; //remove this when adding picture back
     grid-area: picture;
     background-color: $color-background-dark;
     // background-image: url(../images/myselfone.jpg);
@@ -177,7 +178,7 @@ body {
     font-size: 2.5vw;
     text-align: left;
     align-content: center;
-    padding: 3.5rem;
+    padding: 3.5rem 15rem; //w/ picture 3.5rem
     cursor: default;
 
     &-intro {
@@ -820,6 +821,7 @@ body {
 
     &_about-me-text {
       font-size: 2.5vh;
+      padding: 3.5rem;
 
       &-p {
         font-size: 2vh;
