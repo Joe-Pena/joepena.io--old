@@ -113,11 +113,22 @@ body {
       grid-row-start: 1;
       display: inline-block;
       width: 100%;
-  
+      animation: fadeInLoad 3s;
+
+      @keyframes fadeInLoad {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
       &--two {
         grid-row-start: 2;
         display: inline-block;
         width: 100%;
+        animation: fadeInLoad 9s;
       }
     }
   }

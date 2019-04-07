@@ -79,11 +79,19 @@ body {
     .container_textbox_about-me {
       grid-row-start: 1;
       display: inline-block;
-      width: 100%; }
+      width: 100%;
+      animation: fadeInLoad 3s; }
+
+@keyframes fadeInLoad {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
       .container_textbox_about-me--two {
         grid-row-start: 2;
         display: inline-block;
-        width: 100%; }
+        width: 100%;
+        animation: fadeInLoad 9s; }
 
 .second-container {
   height: 160vh;
