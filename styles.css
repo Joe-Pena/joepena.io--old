@@ -236,7 +236,10 @@ body {
       text-align: center;
       font-size: 1.5rem;
       font-family: "Lato", sans-serif;
-      font-weight: 700; }
+      font-weight: 700;
+      transition: all 0.25s ease-in-out; }
+      .first-project--links_site-btn:hover {
+        transform: scale(1.03); }
     .first-project--links_github-btn {
       grid-area: git;
       background-color: #A33944;
@@ -251,7 +254,10 @@ body {
       text-align: center;
       font-size: 1.5rem;
       font-family: "Lato", sans-serif;
-      font-weight: 700; }
+      font-weight: 700;
+      transition: all 0.25s ease-in-out; }
+      .first-project--links_github-btn:hover {
+        transform: scale(1.03); }
 
 .second-project {
   height: 150vh;
@@ -307,7 +313,10 @@ body {
       text-align: center;
       font-size: 1.5rem;
       font-family: "Lato", sans-serif;
-      font-weight: 700; }
+      font-weight: 700;
+      transition: all 0.25s ease-in-out; }
+      .second-project--links_site-btn:hover {
+        transform: scale(1.03); }
     .second-project--links_github-btn {
       grid-area: git;
       background-color: #3fa959;
@@ -322,7 +331,10 @@ body {
       text-align: center;
       font-size: 1.5rem;
       font-family: "Lato", sans-serif;
-      font-weight: 700; }
+      font-weight: 700;
+      transition: all 0.25s ease-in-out; }
+      .second-project--links_github-btn:hover {
+        transform: scale(1.03); }
 
 .third-project {
   height: 150vh;
@@ -378,7 +390,10 @@ body {
       text-align: center;
       font-size: 1.5rem;
       font-family: "Lato", sans-serif;
-      font-weight: 700; }
+      font-weight: 700;
+      transition: all 0.25s ease-in-out; }
+      .third-project--links_site-btn:hover {
+        transform: scale(1.03); }
     .third-project--links_github-btn {
       grid-area: git;
       background-color: red;
@@ -393,7 +408,10 @@ body {
       text-align: center;
       font-size: 1.5rem;
       font-family: "Lato", sans-serif;
-      font-weight: 700; }
+      font-weight: 700;
+      transition: all 0.25s ease-in-out; }
+      .third-project--links_github-btn:hover {
+        transform: scale(1.03); }
 
 .fourth-project {
   height: 150vh;
@@ -451,7 +469,10 @@ body {
       text-align: center;
       font-size: 1.5rem;
       font-family: "Lato", sans-serif;
-      font-weight: 700; }
+      font-weight: 700;
+      transition: all 0.25s ease-in-out; }
+      .fourth-project--links_github-btn:hover {
+        transform: scale(1.03); }
 
 .fifth-project {
   height: 150vh;
@@ -508,7 +529,10 @@ body {
       text-align: center;
       font-size: 1.5rem;
       font-family: "Lato", sans-serif;
-      font-weight: 700; }
+      font-weight: 700;
+      transition: all 0.25s ease-in-out; }
+      .fifth-project--links_site-btn:hover {
+        transform: scale(1.03); }
     .fifth-project--links_github-btn {
       grid-area: git;
       background-color: #20f3a2;
@@ -523,7 +547,10 @@ body {
       text-align: center;
       font-size: 1.5rem;
       font-family: "Lato", sans-serif;
-      font-weight: 700; }
+      font-weight: 700;
+      transition: all 0.25s ease-in-out; }
+      .fifth-project--links_github-btn:hover {
+        transform: scale(1.03); }
 
 .contact-area {
   display: grid;
