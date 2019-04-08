@@ -5,6 +5,8 @@ $color-highlight-links: #3a627c;
 $color-second-bg: #0f0f0f;
 $color-bg-buvie: #212032;
 
+@import './base/animations.scss';
+
 *,
 *::after,
 *::before {
@@ -68,6 +70,7 @@ body {
       &_text {
         border-right: 0.1rem solid $color-font-primary;
         margin-right: 0.2rem;
+        transition: color 0.25s ease;
 
         &:hover {
           color: $color-highlight-links;
@@ -75,6 +78,7 @@ body {
 
         &-last {
           border: none;
+          transition: color 0.25s ease;
 
           &:hover {
             color: $color-highlight-links;
@@ -114,15 +118,6 @@ body {
       display: inline-block;
       width: 100%;
       animation: fadeInLoad 3s;
-
-      @keyframes fadeInLoad {
-        from {
-          opacity: 0;
-        }
-        to {
-          opacity: 1;
-        }
-      }
 
       &--two {
         grid-row-start: 2;

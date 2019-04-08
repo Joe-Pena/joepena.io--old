@@ -1,3 +1,9 @@
+@keyframes fadeInLoad {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
 *,
 *::after,
 *::before {
@@ -49,11 +55,13 @@ body {
       color: #E3E3E3; }
       .navbar_links_link_a_text {
         border-right: 0.1rem solid #E3E3E3;
-        margin-right: 0.2rem; }
+        margin-right: 0.2rem;
+        transition: color 0.25s ease; }
         .navbar_links_link_a_text:hover {
           color: #3a627c; }
         .navbar_links_link_a_text-last {
-          border: none; }
+          border: none;
+          transition: color 0.25s ease; }
           .navbar_links_link_a_text-last:hover {
             color: #3a627c; }
 
@@ -81,12 +89,6 @@ body {
       display: inline-block;
       width: 100%;
       animation: fadeInLoad 3s; }
-
-@keyframes fadeInLoad {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
       .container_textbox_about-me--two {
         grid-row-start: 2;
         display: inline-block;
