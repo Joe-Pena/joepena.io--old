@@ -602,7 +602,7 @@ body {
     font-size: 2vh;
     background-attachment: unset; }
   .second-container {
-    height: 125vh;
+    height: 100vh;
     grid-template-rows: 10% 1fr 0.5fr;
     grid-template-columns: 1fr;
     grid-template-areas: "greet" "text" "text"; }
