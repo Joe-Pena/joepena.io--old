@@ -96,14 +96,24 @@ body {
   font-size: 2.5rem;
   font-weight: 700;
   height: 100vh;
-  background-image: linear-gradient(to bottom right,
+  // background-image: linear-gradient(to bottom right,
+  // rgba(36, 36, 36, 0.8),
+  // rgba(20, 20, 20, 0.8)),
+  // url(../images/citybg.jpeg);
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  // background-attachment: fixed;
+  // z-index: -1;
+  background: linear-gradient(to bottom right,
   rgba(36, 36, 36, 0.8),
-  rgba(20, 20, 20, 0.8)),
-  url(../images/citybg.jpeg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  z-index: -1;
+  rgba(20, 20, 20, 0.8));
+
+  &--bg-video {
+    position: fixed;
+    min-height: 100%;
+    min-width: 100%;
+    z-index: -1;
+  }
 
   &_textbox {
     grid-row-start: 2;
@@ -206,6 +216,7 @@ body {
     "intro"
     "techlist";
   height: 30vw;
+  background: $color-background-dark;
 
   &--intro {
     grid-area: intro;
@@ -838,7 +849,7 @@ body {
   z-index: -1;
 }
 
-@media (max-width: 724px) {
+@media (max-width: 768px) {
   .heading {
     grid-template-columns: 1fr;
     position: absolute;
@@ -851,6 +862,18 @@ body {
   .container {
     font-size: 2vh;
     background-attachment: unset;
+    background-image: linear-gradient(to bottom right,
+    rgba(36, 36, 36, 0.8),
+    rgba(20, 20, 20, 0.8)),
+    url(../images/citybg.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: -1;
+
+    &--bg-video {
+      display: none;
+    }
   }
 
   .second-container {
